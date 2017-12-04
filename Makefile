@@ -1,5 +1,5 @@
 # This should match the FROM line in Dockerfile:
-UBUNTU := trusty
+UBUNTU := xenial
 
 # These override the ARG lines in Dockerfile:
 QT:= 5.9.3
@@ -9,7 +9,7 @@ VCS_REF := $(shell git rev-parse --short HEAD)
 BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 # If you need to change anything below, please raise an issue:
-TAG := qt-build:$(UBUNTU)-$(QT)
+TAG := qt-build:$(UBUNTU)-$(QT)-1
 
 .PHONY: image
 
