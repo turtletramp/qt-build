@@ -2,9 +2,9 @@
 UBUNTU := trusty
 
 # These override the ARG lines in Dockerfile:
-QT:= 5.7.1
-QTM := 5.7
-QTSHA := fdf6b4fb5ee9ade2dec74ddb5bea9e1738911e7ee333b32766c4f6527d185eb4
+QT:= 5.9.3
+QTM := 5.9
+QTSHA := 4df4f8e6ccd61f9aa038ad4a6e688412a95de78f8607c4132b8277f05aac24b8
 VCS_REF := $(shell git rev-parse --short HEAD)
 BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
 
