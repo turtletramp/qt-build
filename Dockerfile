@@ -24,11 +24,13 @@ RUN apt-get update -q && \
         git \
         libfontconfig1 \
         libice6 \
+        libgl1-mesa-dev \
         libsm6 \
         libx11-xcb1 \
         libxext6 \
         libxrender1 \
         locales \
+        mesa-common-dev \
         openssh-client \
         p7zip \
         xvfb \

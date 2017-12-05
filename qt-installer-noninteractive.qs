@@ -35,13 +35,13 @@ Controller.prototype.ComponentSelectionPageCallback = function() {
 console.log("ComponentSelectionPageCallback");
     var widget = gui.currentPageWidget();
 
-    widget.deselectAll();
-    widget.selectComponent("qt.593.gcc_64");
+//*** modified by turtletramp/thomas@danzl.org
+    // selecting all packages to allow all different types of qt builds
+    widget.selectAll();
     // http://code.qt.io/cgit/qtsdk/qtsdk.git/tree/packaging-tools/configurations/pkg_templates/pkg_593
-    widget.selectComponent("qt.593.clang_64");
-    widget.selectComponent("qt.593.android_armv7");
-    widget.selectComponent("qt.593.qtvirtualkeyboard");
-    widget.selectComponent("qt.593.qtwebengine");
+//    widget.deselectAll();
+//    widget.selectComponent("qt.593.gcc_64");
+//*** modified by turtletramp/thomas@danzl.org END
 
     gui.clickButton(buttons.NextButton);
 }
