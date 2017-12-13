@@ -58,3 +58,6 @@ RUN gcc -v
 RUN g++ -v
 RUN make -v
 RUN qmake -v
+
+ENV QT_ROOT_DIR=/opt/qt/${QT}
+
